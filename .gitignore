@@ -1,0 +1,10 @@
+# Node Modules
+node_modules
+
+# Environment
+.env
+
+# Lock Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
