@@ -31,8 +31,10 @@ client.on('messageCreate', async(message) => {
   const chapterNumber = Math.floor(Math.random() * data.chapters.length);
   const latestChapter = data.chapters[0];
 
+
+
   if(messageProcess(message.content) === 'random') {
-    message.reply(data.chapters[chapterNumber].title);
+    message.reply(`Random!\n${data.chapters[chapterNumber].title}\nLink: https://ww5.mangakakalot.tv/chapter/${data.chapters[chapterNumber].id.split('$$')[0]}`);
   } else if(messageProcess(message.content) === 'latest chapter') {
     message.reply(latestChapter.title);
   } else if(messageProcess(message.content) === 'notify') {
